@@ -1,0 +1,48 @@
+header {
+  font-family: "Fredoka", sans-serif;
+  font-size: 25px;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  color: black;
+}
+
+.nav-container {
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: coral;
+}
+
+.nav-bar {
+  display: flex;
+  background-color: black;
+  margin: auto;
+  padding: 5px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.nav-bar__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-bar__menu a {
+  margin: 10px;
+}
