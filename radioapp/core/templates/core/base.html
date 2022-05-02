@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} | Radioapp </title>
+
+    {% load static %}
+    <!-- Estilos y fuentes -->
+    <link href="{% static 'core/css/styles.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Fredoka:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav class="nav-container">
+    <div class="nav-bar">
+        <div class="playbutton">
+            <audio type="audio/mpeg">
+                <source src="https://radiarte11.radio12345.com/">
+            </audio>
+        </div>
+        <a href="{% url 'home' %}" class="nav-logo">RadioAPP LOGO</a>
+    <ul class="nav-bar__menu">
+        <li>
+            <a>Portada</a>
+        </li>
+        <li>
+            <a>Programación</a>
+        </li>
+        <li>
+            <a>Blog</a>
+        </li>
+        <li>
+            <a>Nosotros</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+{% block headers %} {% endblock %}
+
+    <H1>BASE HTML</H1>
+
+{% block content %} {% endblock %}
+
+ <!-- Inicio. radio hosting USAstreams.com html5 player -->
+<!-- Licencia: GRATIS-XDF4543ERF -->
+<div style = "bottom: 0;display: flex;height: 80px;left: 0;position: fixed;right: 0;width: 100%;z-index: 1500;overflow: hidden;" ><iframe name="contenedorPlayer" class="cuadroBordeado" allow="autoplay" width="100%" height="80px" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no  src="https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=http://109.169.76.153:8865&fondo=05&formato=mpeg&color=3&titulo=2&autoStart=1&vol=5&tipo=200&nombre=RadioAPP&imagen=https://cp.usastreams.com/playerHTML5/img/cover.png&server=http://109.169.76.153:8865"></iframe></div>
+<!-- En players responsive puede modificar el weight a sus necesidades, Por favor no modifique el resto del codigo para poder seguir ofreciendo este servicio gratis  -->
+<!-- Fin. USAstreams.com html5 player -->
+</body>
+</html>
